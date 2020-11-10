@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./calculator.css">
+
+    <title>電卓アプリ</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td id="d_box" colspan="4"><input type="text" value="0"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="c" class="symbol" onclick="input_clear()"></td>
+                <td><input type="button" value="+/-" class="symbol" onclick="input_sign()"></td>
+                <td><input type="button" value="%" class="symbol" onclick="input_percent()"></td>
+                <td><input type="button" value="÷" class="op" onclick="input_operator('/')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="input_number(7)"></td>
+                <td><input type="button" value="8" onclick="input_number(8)"></td>
+                <td><input type="button" value="9" onclick="input_number(9)"></td>
+                <td><input type="button" value="×" class="op" onclick="input_operator('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="input_number(4)"></td>
+                <td><input type="button" value="5" onclick="input_number(5)"></td>
+                <td><input type="button" value="6" onclick="input_number(6)"></td>
+                <td><input type="button" value="-" class="op" onclick="input_operator('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="input_number(1)"></td>
+                <td><input type="button" value="2" onclick="input_number(2)"></td>
+                <td><input type="button" value="3" onclick="input_number(3)"></td>
+                <td><input type="button" value="+" class="op" onclick="input_operator('+')"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2"><input type="button" value="0" class="zero" onclick="input_number(0)"></td>
+                <td><input type="button" value="." onclick="input_number('.')"></td>
+                <td><input type="button" value="=" class="op" onclick="input_operator('=')"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="./calculator.js"></script>
+</body>
+
+</html>
